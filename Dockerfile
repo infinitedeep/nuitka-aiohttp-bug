@@ -16,7 +16,5 @@ COPY . .
 RUN cd utils && python -m nuitka --module --python-flag=-OO --remove-output --lto magic.py
 RUN cd utils && python -m nuitka --module --python-flag=-OO --remove-output --lto network.py
 RUN rm utils/network.py utils/magic.py
-RUN ls /app
-RUN ls /app/utils
 
 ENTRYPOINT [ "python", "main.py" ]
