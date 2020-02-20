@@ -1,4 +1,4 @@
-Issue tracked at [Nuitka/#](https://github.com/Nuitka/Nuitka/issues/)
+Issue tracked at [Nuitka/#626](https://github.com/Nuitka/Nuitka/issues/626)
 
 This repo illustrates a bug that occurs when using nuitka with asyncio coroutines.When you make a network call to a non existent url using aiohttp in a coroutine assume get(), and you wrap the code inside get() with a try catch so that any network issues are swallowed, the coroutine which awaits on get() is still returning `RuntimeError: cannot reuse already awaited compiled_coroutine get`.
 
